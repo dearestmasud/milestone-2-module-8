@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/afa238782c.js" crossorigin="anonymous"></script>
+    <style>
+        /* flex practice style*/
+        .container {
+            border: solid;
+            height: 19em;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            align-items: center;
+
+        }
+
+        .box,
+        .box-1 {
+            border: solid;
+            border-radius: 3em;
+            width: 9em;
+            height: 9em;
+            text-align: center;
+            background-color: blueviolet;
+            color: beige;
+            order: 2;
+        }
+
+        .box-1 {
+            align-self: flex-end;
+            flex-grow: 1;
+            order: 1;
+        }
+
+        /* another flex into the form */
+        .login-container {
+            border: solid;
+            border-style: groove;
+            margin: 2em 33em;
+            background-color: azure;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form p,
+        h1 {
+            text-align: center;
+        }
+
+        .login-form button {
+            margin: 0.2em 7em 1em;
+            font-size: medium;
+            border-radius: 1em;
+            border-color: cadetblue;
+            background-color: gainsboro;
+        }
+        .navigation{
+            display: flex; 
+            justify-content: space-between;
+        }
+        .anchor a{
+            text-decoration: none;
+            font-size: 1.3em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box-1">box-4</div>
+    </div>
+    <section style="margin-top: 2em;">
+        <nav class="navigation">
+            <span class="anchor">
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Orders</a>
+                <a href="">About Us</a>
+            </span>
+            <span>
+                <i class="fas fa-user-circle"></i>
+                <i class="fas fa-sign-out-alt"></i>
+            </span>
+
+        </nav>
+        <div class="login-container">
+            <form action="" class="login-form">
+                <h1>Login-Form</h1>
+                <p>Name: <input required type="text" name="name" id="name" placeholder="Enter name"></p>
+                <p>Email: <input required type="text" name="email" id="email" placeholder="Enter email"></p>
+                <p>Password: <input required type="password" name="password" id="password" placeholder="Enter password">
+                </p>
+                <button type="submit">Log-in</button>
+                <button type="reset">Cancel</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
