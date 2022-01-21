@@ -1,0 +1,10 @@
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr) 2fr 2fr;
+    gap:3em 1em;
+    border: solid;
+}
+.grid-cell{
+    border: solid;
+    font-size: 2em;
+}
